@@ -43,43 +43,41 @@ const PublicNavbar = () => {
               </NavLink>
             </li>
           </ul>
-          <div className="">
-            <ul className="navbar-nav mb-2 mb-lg-0">
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="/"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Cuenta
-                </a>
-                <ul className="dropdown-menu dropdown-menu-end">
-                  <li>
-                    <NavLink
-                      className={({ isActive }) =>
-                        isActive ? "dropdown-item active" : "dropdown-item"
-                      }
-                      to="/login"
-                    >
-                      Login
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className={({ isActive }) =>
-                        isActive ? "dropdown-item active" : "dropdown-item"
-                      }
-                      to="/register"
-                    >
-                      Registro
-                    </NavLink>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+          <ul className="navbar-nav mb-2 mb-lg-0">
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="/"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Cuenta
+              </a>
+              <ul className="dropdown-menu dropdown-menu-end">
+                <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "dropdown-item active" : "dropdown-item"
+                    }
+                    to="/login"
+                  >
+                    Login
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "dropdown-item active" : "dropdown-item"
+                    }
+                    to="/register"
+                  >
+                    Registro
+                  </NavLink>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
